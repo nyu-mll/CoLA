@@ -2,10 +2,24 @@ import SubmissionForm from './SubmissionForm';
 import SentenceForm from './SentenceForm';
 
 import React from 'react';
+import axios from 'axios';
 
 class Form extends React.Component {
   state = {
-    text: ''
+    text: '',
+    modelName: 1,
+    models: []
+  }
+
+  componentDidMount = () => {
+    axios.get('/test/models', {crossDomain: true}).then((response) => {
+      this.setState({
+        models: response.data,
+        modelName: response.data[0]
+      });
+    }, (response) => {
+
+    });
   }
 
   handleClear = () => {
@@ -16,10 +30,18 @@ class Form extends React.Component {
     this.setState({text: newValue});
   }
 
+  handleModelChange = (e, newValue) => {
+    this.setState({modelName: this.state.models[newValue]})
+  }
+
   render = () => {
     return (
       <div>
-        <SentenceForm handleTextChange={this.handleTextChange} textValue={this.state.text}/>
+        <SentenceForm handleTextChange={this.handleTextChange}
+                      textValue={this.state.text}
+                      modelName={this.state.modelName}
+                      models={this.state.models}
+                      handleModelChange={this.handleModelChange}/>
         <SubmissionForm handleClear={this.handleClear}/>
       </div>
     )
