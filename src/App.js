@@ -4,12 +4,17 @@ import './App.css';
 
 import {blue500} from 'material-ui/styles/colors';
 import Form from './components/Form';
+import About from './components/About';
+import Upload from './components/Upload';
+import NavMenu from './components/NavMenu';
 
 const styles = {
   appBar: {
     spanRight: {
       float: 'right',
-      fontSize: '1em'
+      fontSize: '1em',
+      cursor: 'pointer',
+      marginRight: '0.5em'
     },
     spanLeft: {
       float: 'left',
@@ -23,19 +28,44 @@ const styles = {
 };
 
 class App extends Component {
+  state = {
+    currentNav: 'home'
+  }
+
+  changeNav = (type) => {
+      this.setState({currentNav: type});
+  }
+
+  getNav = () => {
+    if (this.state.currentNav === 'home') {
+      return <Form/>
+    } else if (this.state.currentNav === 'about') {
+      return <About/>
+    } else if (this.state.currentNav === 'upload') {
+      return <Upload/>
+    } else {
+      return <Form/>
+    }
+  }
+
   render() {
     return (
       <div className="App">
         <AppBar
-          title={<div><span style={styles.appBar.spanLeft}>NYU-ML</span><span style={styles.appBar.spanRight}>About</span></div>}
-          iconClassNameRight="muidocs-icon-navigation-expand-more"
+          title={<div>
+                  <span className="span-left" title="Go to NYU MLL website">NYU-MLL</span>
+                  <span onClick={(e) => {this.changeNav('upload');}} className="span-right app-menu-item" title="Upload your own model">Upload</span>
+                  <span onClick={(e) => {this.changeNav('about');}} className="span-right app-menu-item" title="About">About</span>
+                  <span onClick={(e) => {this.changeNav('home');}} className="span-right app-menu-item" title="Go back to home">Home</span>
+                 </div>}
           showMenuIconButton={false}
+          iconElementRight={<NavMenu changeNav={this.changeNav}/>}
         />
       <header className="App-header" style={styles.appHeader}>
           <h1 className="App-title">Grammaticality Judgements</h1>
         </header>
         <div className="App-intro">
-          <Form/>
+          {this.getNav()}
         </div>
       </div>
     );

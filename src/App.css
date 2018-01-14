@@ -16,8 +16,34 @@
   margin-top: 3em;
   text-align: center;
   font-size: large;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.span-right {
+  float: right;
+  font-size: 0.75em;
+  cursor: pointer;
+  margin-right: 0.5em;
+}
+
+.span-right:first-child {
+  margin-right: 0em;
+}
+
+.span-left {
+  float: left;
+  font-size: 0.75em;
+}
+
+.app-bar-icon-right {
+  display: block;
+}
+
+.app-menu-item {
+  display: none;
+}
 
 @media only screen and (min-width: 768px) {
   .App-title {
@@ -27,6 +53,18 @@
   .App-header {
     height: 100px;
   }
+
+  .App-intro {
+    width: 80%;
+  }
+
+  .app-bar-icon-right {
+    display: none !important;
+  }
+
+  .app-menu-item {
+    display: inline;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -34,9 +72,20 @@
     font-size: 3.5em;
   }
 
+  .App-intro {
+    width: 60%;
+  }
 
   .App-header {
     height: 130px;
+  }
+
+  .span-left {
+    font-size: 0.8em;
+  }
+
+  .span-right {
+    font-size: 0.8em;
   }
 }
 
@@ -47,7 +96,11 @@
     height: 150px;
   }
 
+  .App-intro {
+    width: 50%;
+  }
   .App-title {
     font-size: 4em;
   }
+
 }
