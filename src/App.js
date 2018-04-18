@@ -7,6 +7,7 @@ import Form from './components/Form';
 import About from './components/About';
 import Upload from './components/Upload';
 import NavMenu from './components/NavMenu';
+import Sources from './components/Sources';
 
 const styles = {
   appBar: {
@@ -37,14 +38,16 @@ class App extends Component {
   }
 
   getNav = () => {
-    if (this.state.currentNav === 'home') {
+    if (this.state.currentNav === 'demo') {
       return <Form/>
-    } else if (this.state.currentNav === 'about') {
+    } else if (this.state.currentNav === 'home') {
       return <About/>
     } else if (this.state.currentNav === 'upload') {
       return <Upload/>
+    } else if (this.state.currentNav === 'sources') {
+      return <Sources/>
     } else {
-      return <Form/>
+      return <About/>
     }
   }
 
@@ -55,7 +58,8 @@ class App extends Component {
           title={<div>
                   <span className="span-left" title="Go to NYU MLL website">NYU-MLL</span>
                   <span onClick={(e) => {this.changeNav('upload');}} className="span-right app-menu-item" title="Upload your own model">Upload</span>
-                  <span onClick={(e) => {this.changeNav('about');}} className="span-right app-menu-item" title="About">About</span>
+                  <span onClick={(e) => {this.changeNav('sources');}} className="span-right app-menu-item" title="Sources">Sources</span>
+                  <span onClick={(e) => {this.changeNav('demo');}} className="span-right app-menu-item" title="Demo">Demo</span>
                   <span onClick={(e) => {this.changeNav('home');}} className="span-right app-menu-item" title="Go back to home">Home</span>
                  </div>}
           showMenuIconButton={false}

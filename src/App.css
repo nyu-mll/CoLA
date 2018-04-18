@@ -28,6 +28,23 @@
   margin-right: 0.5em;
 }
 
+a {
+  text-decoration: none;
+  color: #2196f3;
+}
+
+a:visited {
+  color: #2196f3;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+ol {
+  padding-left:0;
+}​
+
 .span-right:first-child {
   margin-right: 0em;
 }
@@ -43,6 +60,14 @@
 
 .app-menu-item {
   display: none;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.font-small {
+  font-size: 1em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -102,5 +127,10 @@
   .App-title {
     font-size: 4em;
   }
-
+  
+  .text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+  }
 }

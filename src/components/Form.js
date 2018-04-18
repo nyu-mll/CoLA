@@ -8,7 +8,8 @@ class Form extends React.Component {
   state = {
     text: '',
     modelName: 1,
-    models: []
+    models: [],
+    ready: false
   }
 
   componentDidMount = () => {
@@ -35,16 +36,23 @@ class Form extends React.Component {
   }
 
   render = () => {
-    return (
-      <div>
-        <SentenceForm handleTextChange={this.handleTextChange}
-                      textValue={this.state.text}
-                      modelName={this.state.modelName}
-                      models={this.state.models}
-                      handleModelChange={this.handleModelChange}/>
-        <SubmissionForm handleClear={this.handleClear}/>
-      </div>
-    )
+
+    if (this.state.ready) {
+        return (
+          <div>
+          <SentenceForm handleTextChange={this.handleTextChange}
+                        textValue={this.state.text}
+                        modelName={this.state.modelName}
+                        models={this.state.models}
+                        handleModelChange={this.handleModelChange}/>
+          <SubmissionForm handleClear={this.handleClear}/>
+        </div>
+      );
+    } else {
+      return (
+        <div>Demo is cooking, come back later</div>
+      );
+    }
   }
 }
 
