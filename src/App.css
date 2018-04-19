@@ -5,9 +5,17 @@
   color: white;
 }
 
+.App-header div {
+  margin-top: 0;
+  font-weight: 600;
+  color: #eee;
+}
+
 .App-title {
   text-align: center;
   font-size: 1.5em;
+  margin-bottom: 0em;
+  padding-bottom: 0em;
   font-weight: lighter;
   vertical-align: center;
 }
@@ -70,6 +78,20 @@ ol {
   font-size: 1em;
 }
 
+.citation {
+  background-color: #eee;
+}
+
+table td {
+  padding: 5px;
+  padding-left: 2px;
+  text-align: left;
+}
+
+table tr > td:first-child {
+  white-space: nowrap;
+}
+
 @media only screen and (min-width: 768px) {
   .App-title {
     font-size: 2.5em;
@@ -127,7 +149,7 @@ ol {
   .App-title {
     font-size: 4em;
   }
-  
+
   .text {
     width: 50%;
     margin: 0 auto;

@@ -53,27 +53,28 @@ const Sources = () => {
       <div>
         <div class="strong">References</div>
         <ol>
-          <li>David Adger. 2003. Core syntax: A minimalist approach, volume 33. Oxford University Press Oxford.</li>
-          <li>Mark Baltin and Chris Collins. 2001. The handbook of contemporary syntactic theory, volume 23. John Wiley & Sons.</li>
+
+          <li>David Adger. 2003. Core syntax: A minimalist approach. Oxford University Press Oxford.</li>
+          <li>Mark Baltin and Chris Collins, editors. 2001. Handbook of Contemporary Syntactic Theory. Blackwell Publishing Ltd.</li>
           <li>Mark R Baltin. 1982. A landing site theory of movement rules. Linguistic Inquiry, 13(1):1–38.</li>
           <li>Joan W Bresnan. 1973. Syntax of the comparative clause construction in english. Linguistic inquiry, 4(3):275– 343.</li>
           <li>Andrew Carnie. 2013. Syntax: A generative introduction. John Wiley & Sons.</li>
           <li>Sandra Chung, William A Ladusaw, and James McCloskey. 1995. Sluicing and logical form. Natural language semantics, 3(3):239–282.</li>
           <li>Chris Collins. 2005. A smuggling approach to the passive in english. Syntax, 8(2):81–120.</li>
-          <li>Peter W Culicover and Ray Jackendoff. 1999. The view from the periphery: The English comparative correlative. Linguistic inquiry, 30(4):543–571.</li>
+          <li>Peter W Culicover and Ray Jackendoff. 1999. The view from the periphery: The english comparative correlative. Linguistic inquiry, 30(4):543–571.</li>
           <li>Veneeta Dayal. 1998. Any as inherently modal. Linguistics and philosophy, 21(5):433–476.</li>
           <li>Gerald Gazdar. 1981. Unbounded dependencies and coordinate structure. In The Formal complexity of natural language, pages 183–226. Springer.</li>
           <li>Adele E Goldberg and Ray Jackendoff. 2004. The English resultative as a family of constructions. Language, 80(3):532–568.</li>
-          <li>Ray S. Jackendoff. 1971. Gapping and related rules. Linguistic inquiry, 2(1):21–35.</li>
-          <li>Nirit Kadmon and Fred Landman. 1993. Any. Linguistics and Philosophy, 16(4):353–422.</li>
+          <li>Ray S Jackendoff. 1971. Gapping and related rules. Linguistic inquiry, 2(1):21–35.</li>
+          <li>Nirit Kadmon and Fred Landman. 1993. Any. Linguistics and Philosophy, 16(4):353–422, aug.</li>
           <li>Jong-Bok Kim and Peter Sells. 2008. English syntax: An introduction. CSLI publications.</li>
           <li>Beth Levin. 1993. English verb classes and alternations: A preliminary investigation. University of Chicago press.</li>
-          <li>Jim Miller. 2002. An introduction to English syntax. Edinburgh University Press.</li>
-          <li>Malka Rappaport Hovav and Beth Levin. 2008. The English dative alternation: The case for verb sensitivity. Journal of linguistics, 44(1):129–167.</li>
-          <li>John Robert Ross. 1967. Constraints on variables in syntax.</li>
-          <li>Ivan A. Sag, Gerald Gazdar, Thomas Wasow, and Steven Weisler. 1985. Coordination and how to distinguish categories. Natural Language & Linguistic Theory, 3(2):117–171.</li>
-          <li>Ivan A. Sag, Thomas Wasow, Emily M. Bender, and Ivan A. Sag. 1999. Syntactic theory: A formal introduction, volume 92. Center for the Study of Language and Information Stanford, CA.</li>
-          <li>Ivan A. Sag. 1997. English relative clause constructions. Journal of linguistics, 33(2):431–483.</li>
+          <li>Jim Miller. 2002. An introduction to English syntax. Edinburgh Univ Press.</li>
+          <li>Malka Rappaport Hovav and Beth Levin. 2008. The english dative alternation: The case for verb sensitivity1. Journal of linguistics, 44(1):129–167.</li>
+          <li>John Robert Ross. 1967. Constraints on variables in syntax. Ph.D. thesis, MIT.</li>
+
+          <li>Ivan A Sag, Gerald Gazdar, Thomas Wasow, and Steven Weisler. 1985. Coordination and how to distinguish categories. Natural Language & Linguistic Theory, 3(2):117–171.</li>
+          <li>Ivan A Sag. 1997. English relative clause constructions. Journal of linguistics, 33(2):431–483.</li>
           <li>Dominique Sportiche, Hilda Koopman, and Edward Stabler. 2013. An introduction to syntactic analysis and theory. John Wiley & Sons.</li>
           <li>Edwin Williams. 1980. Predication. Linguistic inquiry, 11(1):203–238.</li>
         </ol>

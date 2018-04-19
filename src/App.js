@@ -66,7 +66,8 @@ class App extends Component {
           iconElementRight={<NavMenu changeNav={this.changeNav}/>}
         />
       <header className="App-header" style={styles.appHeader}>
-          <h1 className="App-title">Grammaticality Judgements</h1>
+          <h1 className="App-title">CoLA</h1>
+          <div>The Corpus of Linguistic Acceptability</div>
         </header>
         <div className="App-intro">
           {this.getNav()}
