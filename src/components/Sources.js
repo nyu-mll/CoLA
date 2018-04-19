@@ -6,8 +6,8 @@ const Sources = () => {
       <div>
         The sentences were gathered from 23 sources, with full citations given below. Those sources were divided into two categories: 17 in-domain, and 6 out-of-domain (development and test only).
         Each source is associated with a code in the dataset.
-        Below find a list of each in-domain and out-of-domain sources, its code, and its size
-      </div>.
+        Below find a list of each in-domain and out-of-domain sources, its identifier code, and its size.
+      </div>
 
       <div class="strong">Sources</div>
       <br/>

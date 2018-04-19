@@ -6,7 +6,7 @@ const About = () => {
       <div>
         <div>CoLA - The Corpus of Linguistic Acceptability</div>
         <br/>
-        <div><a href="mailto:alexwarstadt@gmail.com">Alex Warstadt</a></div>
+        <div><a href="https://alexwarstadt.com/">Alex Warstadt</a></div>
         <div><a href="https://apsdehal.in">Amanpreet Singh</a></div>
         <div><a href="https://nyu.edu/projects/bowman">Sam Bowman</a></div>
         <div>New York University (NYU)</div>
@@ -37,8 +37,6 @@ const About = () => {
         @misc{'{'}warstadt-18,<br/>
                   Author = {'{'}Warstadt, Alexander and Singh, Amanpreet <br/>
                             and Bowman, Samuel R{'}'},<br/>
-                  Date-Added = {'{'}2018-04-18 20:29:37 +0000{'}'},<br/>
-                  Date-Modified = {'{'}2018-04-18 20:39:17 +0000{'}'},<br/>
                   Howpublished = {'{'}http://nyu-mll.github.io/cola{'}'},<br/>
                   Title = {'{'}Corpus of Linguistic Acceptability{'}'},<br/>
                   Year = {'{'}2018}{'}'}<br/>
@@ -127,7 +125,7 @@ const About = () => {
           The text in this corpus is excerpted from the published works at the end of this document,
           and copyright (where applicable) remains with the original authors or publishers.
           We expect that research use within the US is legal under fair use,
-          but make no guarantee of this.
+          but make no guarantee of this.<br/>
         </div>
       </div>
     </div>
