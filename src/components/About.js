@@ -36,7 +36,7 @@ const About = () => {
         <pre className="citation">
         @misc{'{'}warstadt-18,<br/>
                   Author = {'{'}Warstadt, Alexander and Singh, Amanpreet <br/>
-                            and Bowman, Samuel R{'}'},<br/>
+                            and Bowman, Samuel R.{'}'},<br/>
                   Howpublished = {'{'}http://nyu-mll.github.io/cola{'}'},<br/>
                   Title = {'{'}Corpus of Linguistic Acceptability{'}'},<br/>
                   Year = {'{'}2018}{'}'}<br/>
