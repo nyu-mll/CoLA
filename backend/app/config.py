@@ -7,7 +7,7 @@ config = {
     # Websites to be allowed access to the backend.
 
     'cors_origins': ['http://localhost:3000',
-                     'http://nyu-mll.github.io/grammaticality-judgements'],
+                     'https://nyu-mll.github.io/CoLA'],
 
     # Declare key as the name of the model, this will be displayed in website's
     # dropdown for model selection

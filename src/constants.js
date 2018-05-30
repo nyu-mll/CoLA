@@ -1,5 +1,5 @@
 const constants = {
-  baseURL: 'http://localhost:8080'
+  baseURL: 'https://cola.gluebenchmark.com'
 };
 
 export default constants;

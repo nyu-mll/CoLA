@@ -14,8 +14,8 @@ const NavMenu = (props) => (
     anchorOrigin={{horizontal: 'right', vertical: 'top'}}
   >
     <MenuItem primaryText="Home" onClick={(e) => {props.changeNav('home')}}/>
-    <MenuItem primaryText="About" onClick={(e) => {props.changeNav('about')}}/>
-    <MenuItem primaryText="Upload" onClick={(e) => {props.changeNav('upload')}}/>
+    <MenuItem primaryText="Source" onClick={(e) => {props.changeNav('sources')}}/>
+    <MenuItem primaryText="Upload" onClick={(e) => {props.changeNav('demo')}}/>
   </IconMenu>
 );
 
