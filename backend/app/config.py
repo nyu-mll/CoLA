@@ -1,3 +1,8 @@
+import json
+
+with open('./config.json', 'r') as f:
+    config_json = json.load(f)
+
 config = {
     # Websites to be allowed access to the backend.
 
@@ -14,20 +19,7 @@ config = {
     # checkpoint_path: Path for the saved trained checkpoint for the current
     # model
     'models': {
-        'LSTM-1': {
-            'model_path': 'acceptability.models.lstm_1',
-            'params': [],
-            'checkpoint_path': ''
-        },
-        'LM-1': {
-            'model_path': 'acceptability.models.lm_1',
-            'params': [],
-            'checkpoint_path': ''
-        },
-        'InferSent-Real-Fake': {
-            'model_path': 'acceptability.models.infersent_classifier',
-            'params': [],
-            'checkpoint_path': ''
-        }
     }
 }
+
+config.update(config_json)
