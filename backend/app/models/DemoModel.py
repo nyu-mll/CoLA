@@ -1,26 +1,41 @@
 import torch
+from acceptability.modules.dataset import Vocab, GloVeIntersectedVocab
+from argparse import Namespace
+from acceptability.utils import pad_sentences
 
 
 class DemoModel(object):
-    def __init__(self, params):
+    def __init__(self, name, params, vocab_file):
         self.params = params
-        model_class = self._load_module(params['model_path'])
-        model_instance = model_class(**params['params'])
-
         # load model on cpu
-        ckpt = torch.load(params['checkpoint_path'],
+        self.model = torch.load(params['model'],
                           map_location=lambda storage, loc: storage)
-        model_instance.load_state_dict(ckpt)
+        self.embedding = torch.load(params['embedding'],
+                          map_location=lambda storage, loc: storage)
 
-        self.model = model_instance
+        print(self.model)
+        self.model.eval()
+        self.embedding.eval()
 
-    def predict(self, params):
-        return self.model(params)
+        if 'GloVe' in name:
+            args = Namespace()
+            args.vocab_file = vocab_file
+            args.embedding = 'glove.6B.300d'
+            self.vocab = GloVeIntersectedVocab(args, True)
+        else:
+            self.vocab = Vocab(vocab_file, True)
 
-    def _load_module(self, module_path):
-        module = importlib.import_module('.'.join(module_path.split('.')[:-1]))
-        class_name = module_path.split('.')[-1]
 
-        model_class = getattr(module, class_name)
+    def predict(self, text):
+        text = text.strip().split(' ')
+        text = [self.vocab.stoi[word] for word in text]
+        text = [text]
+        crop_pad_length = 30
+        text, _ = pad_sentences(text, self.vocab, crop_pad_length)
+        text = torch.autograd.Variable(torch.LongTensor(text), volatile=True)
+        text = self.embedding(text)
+        output = self.model(text)
 
-        return model_class
+        if type(output) == tuple:
+            output = output[0]
+        return (output > 0.5).data.numpy()[0]
