@@ -1,11 +1,12 @@
 {
-  "name": "grammaticality-judgements-demo",
+  "name": "CoLA",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nyu-mll.github.io/grammaticality-judgements-demo",
+  "homepage": "https://nyu-mll.github.io/CoLA",
   "devDependencies": {
     "gh-pages": "^1.1.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "sw-precache": "^5.2.1"
   },
   "dependencies": {
     "axios": "^0.17.1",
@@ -17,7 +18,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && sw-precache --root='build/' --config config/sw.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

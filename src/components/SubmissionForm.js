@@ -14,7 +14,7 @@ const styles = {
 const SubmissionForm = (props) => {
   return (
     <div className="submission-form">
-      <RaisedButton label="Test" primary={true} labelStyle={styles.testButton.testButtonLabel}/>
+      <RaisedButton onClick={() => props.handleClick()} label="Test" primary={true} labelStyle={styles.testButton.testButtonLabel}/>
       <RaisedButton className="submission-clear-button" label="Clear" onClick={() => props.handleClear()}/>
     </div>);
 };

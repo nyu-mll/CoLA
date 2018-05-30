@@ -1,5 +1,6 @@
 import SubmissionForm from './SubmissionForm';
 import SentenceForm from './SentenceForm';
+import Snackbar from 'material-ui/Snackbar'
 
 import React from 'react';
 import axios from 'axios';
@@ -9,7 +10,10 @@ class Form extends React.Component {
     text: '',
     modelName: 1,
     models: [],
-    ready: false
+    ready: true,
+    result: false,
+    showSnackbar: false,
+    grammatical: '',
   }
 
   componentDidMount = () => {
@@ -19,8 +23,43 @@ class Form extends React.Component {
         modelName: response.data[0]
       });
     }, (response) => {
-
+      this.setState({
+        showSnackbar: true,
+        snackbarStatus: 'Something is wrong!'
+      });
     });
+  }
+
+  handleSubmit = () => {
+    this.setState({
+      grammatical: 2
+    });
+    axios.post('/test/',
+      {
+       model_name: this.state.modelName,
+       text: this.state.text
+      },
+      {crossDomain: true}).then((response) => {
+        const result = response.data === 1;
+
+        this.setState({
+          grammatical: result
+        });
+      }, (response) => {
+        this.setState({
+          showSnackbar: true,
+          snackbarStatus: 'Something is wrong!'
+        });
+        this.clearSnackbar();
+      });
+  }
+
+  clearSnackbar = () => {
+    setTimeout(() => {
+      this.setState({
+        showSnackbar: false
+      })
+    }, 10000)
   }
 
   handleClear = () => {
@@ -40,12 +79,23 @@ class Form extends React.Component {
     if (this.state.ready) {
         return (
           <div>
-          <SentenceForm handleTextChange={this.handleTextChange}
-                        textValue={this.state.text}
-                        modelName={this.state.modelName}
-                        models={this.state.models}
-                        handleModelChange={this.handleModelChange}/>
-          <SubmissionForm handleClear={this.handleClear}/>
+            {this.state.showSnackbar ?
+              <Snackbar
+                style={{
+                  fontSize: '2em'
+                }}
+                open={this.state.showSnackbar}
+                message={this.state.snackbarStatus}
+                autoHideDuration={10000}
+              /> : ''
+            }
+            <SentenceForm handleTextChange={this.handleTextChange}
+                          textValue={this.state.text}
+                          modelName={this.state.modelName}
+                          models={this.state.models}
+                          grammatical={this.state.grammatical}
+                          handleModelChange={this.handleModelChange}/>
+            <SubmissionForm handleClick={this.handleSubmit} handleClear={this.handleClear}/>
         </div>
       );
     } else {

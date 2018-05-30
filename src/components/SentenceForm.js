@@ -17,13 +17,31 @@ const getMenuItems = (props) => {
 }
 
 const SentenceForm = (props) => {
+  let errorText = '';
+  let errorStyle = {};
+  if (props.grammatical === true) {
+    errorText = 'Grammatical';
+    errorStyle = {color: 'green'};
+  } else if (props.grammatical === false) {
+    errorText = 'Ungrammatical';
+  } else if (props.grammatical === 2) {
+    errorText = 'Checking...';
+    errorStyle = {color: 'blue'};
+  }
+
   return (<div>
             <TextField
              value={props.textValue}
              multiLine={true}
              fullWidth={true}
-             hintText="Enter your sentence here"
+             hintText="Enter your sentence here to check grammaticality"
              name="text"
+             errorStyle={{
+               fontSize: '1em',
+               paddingTop: '10px',
+               ...errorStyle
+             }}
+             errorText={errorText}
              onChange={(e, newValue) => {
                         props.handleTextChange(e, newValue)
                       }}/>
@@ -33,7 +51,7 @@ const SentenceForm = (props) => {
              onChange={(e, newValue) => {
                props.handleModelChange(e, newValue);
              }}
-             style={{textAlign: 'left'}}
+             style={{textAlign: 'left', display: 'none'}}
             >
               {getMenuItems(props)}
             </SelectField>
