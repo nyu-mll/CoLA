@@ -1,0 +1,6 @@
+@misc{{warstadt-18,
+    Author = {Warstadt, Alexander and Singh, Amanpreet and Bowman, Samuel R.},
+    Howpublished = {http://nyu-mll.github.io/cola},
+    Title = {Corpus of Linguistic Acceptability},
+    Year = {2018}
+}}

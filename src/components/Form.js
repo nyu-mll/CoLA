@@ -63,7 +63,7 @@ class Form extends React.Component {
   }
 
   handleClear = () => {
-    this.setState({text: ''});
+    this.setState({text: '', grammatical: '', showSnackbar: false});
   }
 
   handleTextChange = (e, newValue) => {
@@ -92,10 +92,13 @@ class Form extends React.Component {
             <SentenceForm handleTextChange={this.handleTextChange}
                           textValue={this.state.text}
                           modelName={this.state.modelName}
+                          handleEnter={this.handleSubmit}
                           models={this.state.models}
                           grammatical={this.state.grammatical}
                           handleModelChange={this.handleModelChange}/>
             <SubmissionForm handleClick={this.handleSubmit} handleClear={this.handleClear}/>
+            <br/>
+            <p><b>Note:</b> Demo is using ELMo + Real/Fake model from the paper.</p>
         </div>
       );
     } else {

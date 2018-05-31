@@ -32,7 +32,7 @@ const SentenceForm = (props) => {
   return (<div>
             <TextField
              value={props.textValue}
-             multiLine={true}
+             multiLine={false}
              fullWidth={true}
              hintText="Enter your sentence here to check grammaticality"
              name="text"
@@ -44,7 +44,13 @@ const SentenceForm = (props) => {
              errorText={errorText}
              onChange={(e, newValue) => {
                         props.handleTextChange(e, newValue)
-                      }}/>
+                      }}
+             onKeyPress={(e) => {
+               if (e.key === 'Enter') {
+                 props.handleEnter();
+               }
+             }}
+            />
             <SelectField
              floatingLabelText="Select a model"
              value={props.modelName}

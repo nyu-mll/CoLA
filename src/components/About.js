@@ -31,21 +31,13 @@ const About = () => {
         </div>
         <br/>
         <div className="strong">Citation</div>
-        <pre className="citation">
-        @misc{'{'}warstadt-18,<br/>
-                    &nbsp;&nbsp;&nbsp;Author = {'{'}Warstadt, Alexander and Singh, Amanpreet
-                    and <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bowman, Samuel R.{'}'},<br/>
-                    &nbsp;&nbsp;&nbsp;Howpublished = {'{'}http://nyu-mll.github.io/cola{'}'},<br/>
-                    &nbsp;&nbsp;&nbsp;Title = {'{'}Corpus of Linguistic Acceptability{'}'},<br/>
-                    &nbsp;&nbsp;&nbsp;Year = {'{'}2018}<br/>
-              {'}'}<br/>
-        </pre>
+        <br/>
+        <a href="cola.txt">Link</a>
+        <br/>
         <br/>
         <div className="strong">Demo</div>
           <br/>
           <Form/>
-        <br/>
         <br/>
         <div className="strong">Data description</div>
         <br/>
@@ -127,7 +119,7 @@ const About = () => {
         <div className="strong">Disclaimer</div>
         <br/>
         <div>
-          The text in this corpus is excerpted from the published works at the end of this document,
+          The text in this corpus is excerpted from the published works listed in sources section,
           and copyright (where applicable) remains with the original authors or publishers.
           We expect that research use within the US is legal under fair use,
           but make no guarantee of this.<br/>
