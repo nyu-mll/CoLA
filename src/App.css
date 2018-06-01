@@ -102,6 +102,7 @@ table tr > td:first-child {
   }
 
   .App-intro {
+    font-size: 1em;
     width: 80%;
   }
 
@@ -144,6 +145,7 @@ table tr > td:first-child {
   }
 
   .App-intro {
+    font-size: 1.0em;
     width: 55%;
   }
   .App-title {
