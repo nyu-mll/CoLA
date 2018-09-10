@@ -82,6 +82,11 @@ ol {
   background-color: #eee;
 }
 
+.mll-logo {
+  width: 90px;
+  height: 62px;
+}
+
 table td {
   padding: 5px;
   padding-left: 2px;
@@ -146,7 +151,7 @@ table tr > td:first-child {
 
   .App-intro {
     font-size: 1.0em;
-    width: 55%;
+    width: 70%;
   }
   .App-title {
     font-size: 4em;

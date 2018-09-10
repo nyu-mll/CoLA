@@ -56,7 +56,11 @@ class App extends Component {
       <div className="App">
         <AppBar
           title={<div>
-                  <span className="span-left" title="Go to NYU MLL website">NYU-MLL</span>
+                  <span className="span-left" title="Go to NYU MLL website">
+                    <a href="https://wp.nyu.edu/ml2/">
+                      <img className="mll-logo" src="ml2_logo.png" alt="NYU-MLL"/>
+                    </a>
+                  </span>
                   {/* <span onClick={(e) => {this.changeNav('upload');}} className="span-right app-menu-item" title="Upload your own model">Upload</span> */}
                   <span onClick={(e) => {this.changeNav('sources');}} className="span-right app-menu-item" title="Sources">Sources</span>
                   <span onClick={(e) => {this.changeNav('demo');}} className="span-right app-menu-item" title="Demo">Demo</span>
