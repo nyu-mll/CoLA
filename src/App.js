@@ -8,7 +8,7 @@ import About from './components/About';
 import Upload from './components/Upload';
 import NavMenu from './components/NavMenu';
 import Sources from './components/Sources';
-import VerbFrames from './components/VerbFrames'
+import VerbFrames from './components/VerbFrames';
 
 const styles = {
   appBar: {
