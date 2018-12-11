@@ -17,10 +17,10 @@ const VerbFrames = () => {
         <div>
           <div>
           Here we present two complementary datasets for download:
-          The Lexical and Verb-Frame Alternations (LAVA) dataset and the Frame and Alternations of Verbs Acceptability (FAVA) dataset.
-          LAVA consists of 515 verbs annotated for membership in 10 classes corresponding to different verb frames.
+          The Lexical Verb-Frame Alternations (LaVA) dataset and the Frame and Alternations of Verbs Acceptability (FAVA) dataset.
+          LaVA consists of 515 verbs annotated for membership in 10 classes corresponding to different verb frames.
           Annotations are 1 for membership, 0 for non-membership, and x where membership is unknown.
-          FAVA consists of nearly 10000 sentences containing the verbs in LAVA appearing in different verb frames and labeled for acceptability (grammaticality).
+          FAVA consists of nearly 10000 sentences containing the verbs in LaVA appearing in different verb frames and labeled for acceptability (grammaticality).
           Annotations are 1 for acceptable sentences, and 0 for unacceptable sentences.
           Contact alexwarstadt [at] gmail [dot] com with any questions or issues.
           </div>
@@ -30,7 +30,7 @@ const VerbFrames = () => {
         <div className="strong">Download</div>
         <br/>
         <div>
-          Download LAVA from this <a href="lava.zip">link</a>.
+          Download LaVA from this <a href="lava.zip">link</a>.
         </div>
         <br/>
         <br/>
