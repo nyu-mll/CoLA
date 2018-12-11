@@ -39,6 +39,17 @@ const About = () => {
           <br/>
           <Form/>
         <br/>
+        <div className="strong">Kaggle Competitions</div>
+        <br/>
+        Evaluation on CoLA can be done on
+        <a href="https://www.kaggle.com/c/cola-in-domain-open-evaluation">
+        this kaggle page
+        </a> for in-domain test set and on
+        <a href="https://www.kaggle.com/c/cola-out-of-domain-open-evaluation">
+        this kaggle page
+        </a> for out-of-domain test set.
+        </div>
+        <br/>
         <div className="strong">Data description</div>
         <br/>
         <div>
