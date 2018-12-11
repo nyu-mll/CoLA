@@ -5,10 +5,10 @@ const VerbFrames = () => {
   return (
     <div className="text-left font-small text">
       <div>
-        <div><a href="http://www.cis.lmu.de/~kann/">Katharina Kann (NYU)</a></div>
-        <div><a href="https://alexwarstadt.com/">Alex Warstadt (NYU)</a></div>
-        <div><a href="https://wp.nyu.edu/adinawilliams/">Adina Williams (FAIR)</a></div>
-        <div><a href="https://nyu.edu/projects/bowman">Sam Bowman (NYU)</a></div>
+        <div><a href="http://www.cis.lmu.de/~kann/">Katharina Kann</a> (NYU)</div>
+        <div><a href="https://alexwarstadt.com/">Alex Warstadt</a> (NYU)</div>
+        <div><a href="https://wp.nyu.edu/adinawilliams/">Adina Williams</a> (FAIR)</div>
+        <div><a href="https://nyu.edu/projects/bowman">Sam Bowman</a> (NYU)</div>
       </div>
       <br/>
       <div>
