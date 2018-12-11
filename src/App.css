@@ -62,6 +62,10 @@ ol {
   font-size: 0.75em;
 }
 
+.span-left a {
+  color: white;
+}
+
 .app-bar-icon-right {
   display: block;
 }

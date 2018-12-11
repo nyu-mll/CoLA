@@ -35,19 +35,24 @@ const About = () => {
         <a href="cola.txt">Link</a>
         <br/>
         <br/>
-        <div className="strong">Demo</div>
+        {/* <div className="strong">Demo</div>
           <br/>
           <Form/>
-        <br/>
+          <br/> */}
+
         <div className="strong">Kaggle Competitions</div>
         <br/>
-        Evaluation on CoLA can be done on
-        <a href="https://www.kaggle.com/c/cola-in-domain-open-evaluation">
-        this kaggle page
-        </a> for in-domain test set and on
-        <a href="https://www.kaggle.com/c/cola-out-of-domain-open-evaluation">
-        this kaggle page
-        </a> for out-of-domain test set.
+        <div>
+        We have setup Kaggle competitions for evaluation on CoLA's test set:
+        <br/>
+        <br/>
+        (i) <a href="https://www.kaggle.com/c/cola-in-domain-open-evaluation">
+        In-Domain test set
+        </a>
+        &nbsp;
+        (ii) <a href="https://www.kaggle.com/c/cola-out-of-domain-open-evaluation">
+        Out-of-domain test set
+        </a>
         </div>
         <br/>
         <div className="strong">Data description</div>

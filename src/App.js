@@ -48,7 +48,7 @@ class App extends Component {
     } else if (this.state.currentNav === 'sources') {
       return <Sources/>
     } else if (this.state.currentNav === 'verbframes') {
-    return <VerbFrames/>
+      return <VerbFrames/>
     } else {
       return <About/>
     }
@@ -61,14 +61,15 @@ class App extends Component {
           title={<div>
                   <span className="span-left" title="Go to NYU MLL website">
                     <a href="https://wp.nyu.edu/ml2/">
-                      <img className="mll-logo" src="ml2_logo.png" alt="NYU-MLL"/>
+                      {/* <img className="mll-logo" src="ml2_logo.png" alt="NYU-MLL"/> */}
+                      NYU-MLL
                     </a>
                   </span>
                   {/* <span onClick={(e) => {this.changeNav('upload');}} className="span-right app-menu-item" title="Upload your own model">Upload</span> */}
                   <span onClick={(e) => {this.changeNav('sources');}} className="span-right app-menu-item" title="Sources">Sources</span>
-                  <span onClick={(e) => {this.changeNav('demo');}} className="span-right app-menu-item" title="Demo">Demo</span>
+                  {/* <span onClick={(e) => {this.changeNav('demo');}} className="span-right app-menu-item" title="Demo">Demo</span> */}
                   <span onClick={(e) => {this.changeNav('home');}} className="span-right app-menu-item" title="Go back to home">Home</span>
-                  <span onClick={(e) => {this.changeNav('verbframes');}} className="span-right app-menu-item" title="Verb Frames">Home</span>
+                  <span onClick={(e) => {this.changeNav('verbframes');}} className="span-right app-menu-item" title="Verb Frames">LAVA</span>
                  </div>}
           showMenuIconButton={false}
           iconElementRight={<NavMenu changeNav={this.changeNav}/>}
