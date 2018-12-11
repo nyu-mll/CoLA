@@ -19,7 +19,7 @@ const About = () => {
           The Corpus of Linguistic Acceptability (CoLA) in its full form consists of 10657 sentences from 23 linguistics publications,
           expertly annotated for acceptability (grammaticality) by their original authors.
           The public version provided here contains 9594 sentences belonging to training and development sets, and excludes 1063 sentences belonging to a held out test set.
-          Contact alexwarstadt [at] gmail [dot] com with any questions or issues. Read the <a href="https://arxiv.org/abs/1805.12471">paper</a> or checkout the <a href="https://github.com/nyu-mll/CoLA-baselines">source code</a> for baselines.
+          Contact alexwarstadt [at] gmail [dot] com with any questions or issues. Read the <a href="https://arxiv.org/abs/1805.12471">paper</a> or check out the <a href="https://github.com/nyu-mll/CoLA-baselines">source code</a> for baselines.
           </div>
           <br/>
         </div>
@@ -44,7 +44,7 @@ const About = () => {
         <div>
           <div className="strong">Split</div>
           <br/>
-          We have split the data into an in-domain set comprised sentences from 17 sources and an out-of-domain set comprised of the remaining 6 sources. The in-domain set is split into train/dev/test sets, and the out-of-domain is split into dev/test sets. The test sets are not made public. For convenience, each dataset is provided is provided twice, in raw form, and tokenized form. We used the NLTK tokenizer. The public data is split into the following files:
+          We have split the data into an in-domain set with sentences from 17 sources and an out-of-domain set with the remaining 6 sources. The in-domain set is split into train/dev/test sections, and the out-of-domain set is split into dev/test sections. The test sets are not made public. For convenience, each dataset is provided is provided twice, in raw form and in tokenized form (from the NLTK tokenizer). The public data is split into the following files:
           <ul>
             <li>raw/in_domain_train.tsv (8551 lines)</li>
             <li>raw/in_domain_dev.tsv (527 lines)</li>
