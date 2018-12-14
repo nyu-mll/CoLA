@@ -69,7 +69,7 @@ class App extends Component {
                   <span onClick={(e) => {this.changeNav('sources');}} className="span-right app-menu-item" title="Sources">Sources</span>
                   {/* <span onClick={(e) => {this.changeNav('demo');}} className="span-right app-menu-item" title="Demo">Demo</span> */}
                   <span onClick={(e) => {this.changeNav('home');}} className="span-right app-menu-item" title="Go back to home">Home</span>
-                  <span onClick={(e) => {this.changeNav('verbframes');}} className="span-right app-menu-item" title="Verb Frames">LAVA</span>
+                  <span onClick={(e) => {this.changeNav('verbframes');}} className="span-right app-menu-item" title="Verb Frames">LaVA</span>
                  </div>}
           showMenuIconButton={false}
           iconElementRight={<NavMenu changeNav={this.changeNav}/>}
