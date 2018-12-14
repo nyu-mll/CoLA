@@ -27,7 +27,11 @@ const About = () => {
         <div className="strong">Download</div>
         <br/>
         <div>
-          Download the dataset from this <a href="cola_public.zip">link</a>.
+          Download the latest version (v.1.1) of CoLA from this <a href="cola_public_1.1.zip">link</a>.
+          <br/>
+          v.1.1 corrects several typographical errors in v.1.0 including both sentences and acceptability labels.
+          <br/>
+          Download the original version (v.1.0) this <a href="cola_public_1.0.zip">link</a>.
         </div>
         <br/>
         <div className="strong">Citation</div>
