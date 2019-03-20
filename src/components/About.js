@@ -1,5 +1,11 @@
 import React from 'react';
 import Form from './Form';
+import FileCloudDownload from 'material-ui/svg-icons/file/cloud-download';
+import Description from 'material-ui/svg-icons/action/description';
+import Equalizer from 'material-ui/svg-icons/av/equalizer';
+import Create from 'material-ui/svg-icons/content/create';
+import TOC from 'material-ui/svg-icons/action/toc';
+import Info from 'material-ui/svg-icons/action/info';
 
 const About = () => {
   return (
@@ -12,7 +18,7 @@ const About = () => {
       </div>
       <br/>
       <div>
-        <div className="strong">Introduction</div>
+        <div className="strong">Introduction <Info className="icons" /></div>
         <br/>
         <div>
           <div>
@@ -23,8 +29,14 @@ const About = () => {
           </div>
           <br/>
         </div>
+        <div className="strong">Paper <a href="https://arxiv.org/abs/1805.12471"><Description className="icons" /></a></div>
+        <br/>
+        <div>
+          Read the paper at <a href="https://arxiv.org/abs/1805.12471">https://arxiv.org/abs/1805.12471</a>
+        </div>
+        <br/>
 
-        <div className="strong">Download</div>
+        <div className="strong">Download  <a href="colo_public_1.1.zip"><FileCloudDownload className="icons" /></a></div>
         <br/>
         <div>
           Download the latest version (v.1.1) of CoLA from this <a href="cola_public_1.1.zip">link</a>.
@@ -34,7 +46,7 @@ const About = () => {
           Download the original version (v.1.0) this <a href="cola_public_1.0.zip">link</a>.
         </div>
         <br/>
-        <div className="strong">Citation</div>
+        <div className="strong">Citation <a href="cola.txt"><Create className="icons" /></a></div>
         <pre className="citation-pre">
           <code>
             @article{'{'}warstadt2018neural,<br/>
@@ -54,7 +66,7 @@ const About = () => {
           <Form/>
           <br/> */}
 
-        <div className="strong">Kaggle Competitions</div>
+        <div className="strong">Kaggle Competitions <a href="https://www.kaggle.com/c/cola-in-domain-open-evaluation"><Equalizer className="icons" /></a></div>
         <br/>
         <div>
         We have setup Kaggle competitions for evaluation on CoLA's test set:
@@ -69,7 +81,7 @@ const About = () => {
         </a>
         </div>
         <br/>
-        <div className="strong">Data description</div>
+        <div className="strong">Data description <TOC className="icons" /></div>
         <br/>
         <div>
           <div className="strong">Split</div>

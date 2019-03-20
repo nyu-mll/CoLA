@@ -51,6 +51,11 @@ a:visited {
   text-decoration: underline;
 }
 
+.icons {
+  margin-left: 0.1em;
+  vertical-align: text-bottom;
+}
+
 ol {
   padding-left:0;
 }​
