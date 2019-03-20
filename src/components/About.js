@@ -35,6 +35,16 @@ const About = () => {
         </div>
         <br/>
         <div className="strong">Citation</div>
+        <pre className="citation-pre">
+          <code>
+            @article{'{'}warstadt2018neural,<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;title={'{'}Neural Network Acceptability Judgments},<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;author={'{'}Warstadt, Alex and Singh, Amanpreet and Bowman, Samuel R},<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;journal={'{'}arXiv preprint arXiv:1805.12471},<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;year={'{'}2018}<br/>
+            }
+          </code>
+        </pre>
         <br/>
         <a href="cola.txt">Link</a>
         <br/>

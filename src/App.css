@@ -46,7 +46,9 @@ a:visited {
 }
 
 .strong {
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: 1.2em;
+  text-decoration: underline;
 }
 
 ol {
@@ -84,6 +86,13 @@ ol {
 
 .citation {
   background-color: #eee;
+}
+
+.citation-pre {
+  background-color: #eee;
+  white-space: pre-wrap;
+  word-break: break-all;
+  padding: 1em;
 }
 
 .mll-logo {

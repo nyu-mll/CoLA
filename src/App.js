@@ -35,10 +35,19 @@ class App extends Component {
   }
 
   changeNav = (type) => {
-      this.setState({currentNav: type});
+    if (type === 'verbframes') {
+      window.location.hash = "#lava";
+    } else {
+      window.location.hash = ""
+    }
+    this.setState({currentNav: type});
   }
 
   getNav = () => {
+    if (window.location.hash === "#lava") {
+      return <VerbFrames/>
+    }
+
     if (this.state.currentNav === 'demo') {
       return <Form/>
     } else if (this.state.currentNav === 'home') {
