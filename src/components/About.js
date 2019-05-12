@@ -6,6 +6,7 @@ import Equalizer from 'material-ui/svg-icons/av/equalizer';
 import Create from 'material-ui/svg-icons/content/create';
 import TOC from 'material-ui/svg-icons/action/toc';
 import Info from 'material-ui/svg-icons/action/info';
+import Person from 'material-ui/svg-icons/social/person';
 
 const About = () => {
   return (
@@ -79,6 +80,13 @@ const About = () => {
         (ii) <a href="https://www.kaggle.com/c/cola-out-of-domain-open-evaluation">
         Out-of-domain test set
         </a>
+        </div>
+        <br/>
+        <div className="strong">Human Annotations <Person className="icons"/></div>
+        <br/>
+        <div>
+          Download the human annotations for 200 selected CoLA examples
+          from <a href="https://drive.google.com/file/d/11NSHDqZQEJs1O5tAWgrOVAKDHtT0oNIu/view?usp=sharing">this link</a>.
         </div>
         <br/>
         <div className="strong">Data description <TOC className="icons" /></div>
