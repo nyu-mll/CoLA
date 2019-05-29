@@ -9,7 +9,7 @@
     "sw-precache": "^5.2.1"
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.18.0",
     "material-ui": "^0.20.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
