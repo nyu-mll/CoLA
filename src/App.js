@@ -9,6 +9,7 @@ import Upload from './components/Upload';
 import NavMenu from './components/NavMenu';
 import Sources from './components/Sources';
 import VerbFrames from './components/VerbFrames';
+import GrammaticalAnnotations from './components/GrammaticalAnnotations';
 
 const styles = {
   appBar: {
@@ -37,6 +38,8 @@ class App extends Component {
   changeNav = (type) => {
     if (type === 'verbframes') {
       window.location.hash = "#lava";
+    } else if (type === 'grammatical_annotations') {
+      window.location.hash = "#grammatical_annotations";
     } else {
       window.location.hash = ""
     }
@@ -46,6 +49,8 @@ class App extends Component {
   getNav = () => {
     if (window.location.hash === "#lava") {
       return <VerbFrames/>
+    } else if (window.location.hash === "#grammatical_annotations") {
+      return <GrammaticalAnnotations/>
     }
 
     if (this.state.currentNav === 'demo') {
@@ -58,6 +63,8 @@ class App extends Component {
       return <Sources/>
     } else if (this.state.currentNav === 'verbframes') {
       return <VerbFrames/>
+    } else if (this.state.currentNav === 'grammatical_annotations') {
+      return <GrammaticalAnnotations/>
     } else {
       return <About/>
     }
@@ -79,6 +86,7 @@ class App extends Component {
                   {/* <span onClick={(e) => {this.changeNav('demo');}} className="span-right app-menu-item" title="Demo">Demo</span> */}
                   <span onClick={(e) => {this.changeNav('home');}} className="span-right app-menu-item" title="Go back to home">Home</span>
                   <span onClick={(e) => {this.changeNav('verbframes');}} className="span-right app-menu-item" title="Verb Frames">LaVA</span>
+                  <span onClick={(e) => {this.changeNav('grammatica_annotations');}} className="span-right app-menu-item" title="Grammatical Annotations">Grammatical Annotations</span>
                  </div>}
           showMenuIconButton={false}
           iconElementRight={<NavMenu changeNav={this.changeNav}/>}
