@@ -21,8 +21,8 @@ const VerbFrames = () => {
           LaVA consists of 515 verbs annotated for membership in 10 classes corresponding to different verb frames.
           Annotations are 1 for membership, 0 for non-membership, and x where membership is unknown.
           FAVA consists of nearly 10000 sentences containing the verbs in LaVA appearing in different verb frames and labeled for acceptability (grammaticality).
-          Annotations are 1 for acceptable sentences, and 0 for unacceptable sentences. Read the <a href="https://arxiv.org/abs/1811.10773">paper</a>
-          for LSTM performance on LaVA and FAVA and for detailed discussion of our data construction methodology.
+          Annotations are 1 for acceptable sentences, and 0 for unacceptable sentences. Read the <a href="https://arxiv.org/abs/1811.10773">paper</a> for
+          LSTM performance on LaVA and FAVA and for detailed discussion of our data construction methodology.
           Contact alexwarstadt [at] gmail [dot] com with any questions or issues.
           </div>
           <br/>
@@ -41,7 +41,6 @@ const VerbFrames = () => {
           Download LaVA from this <a href="lava.zip">link</a>.
         </div>
         <br/>
-        <br/>
         <div>
           Download FAVA from this <a href="fava.zip">link</a>.
         </div>
@@ -58,7 +57,6 @@ const VerbFrames = () => {
             }
           </code>
         </pre>
-        <br/>
         <a href="verb.txt">Link</a>
         <br/>
         <br/>
