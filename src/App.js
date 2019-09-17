@@ -82,11 +82,11 @@ class App extends Component {
                     </a>
                   </span>
                   {/* <span onClick={(e) => {this.changeNav('upload');}} className="span-right app-menu-item" title="Upload your own model">Upload</span> */}
-                  <span onClick={(e) => {this.changeNav('sources');}} className="span-right app-menu-item" title="Sources">Sources</span>
                   {/* <span onClick={(e) => {this.changeNav('demo');}} className="span-right app-menu-item" title="Demo">Demo</span> */}
-                  <span onClick={(e) => {this.changeNav('home');}} className="span-right app-menu-item" title="Go back to home">Home</span>
                   <span onClick={(e) => {this.changeNav('verbframes');}} className="span-right app-menu-item" title="Verb Frames">LaVA</span>
-                  <span onClick={(e) => {this.changeNav('grammatica_annotations');}} className="span-right app-menu-item" title="Grammatical Annotations">Grammatical Annotations</span>
+                  <span onClick={(e) => {this.changeNav('grammatical_annotations');}} className="span-right app-menu-item" title="Grammatical Annotations">Grammatical Annotations</span>
+                  <span onClick={(e) => {this.changeNav('sources');}} className="span-right app-menu-item" title="Sources">Sources</span>
+                  <span onClick={(e) => {this.changeNav('home');}} className="span-right app-menu-item" title="Go back to home">Home</span>
                  </div>}
           showMenuIconButton={false}
           iconElementRight={<NavMenu changeNav={this.changeNav}/>}

@@ -1,5 +1,4 @@
 import React from 'react';
-import Form from './Form';
 import FileCloudDownload from 'material-ui/svg-icons/file/cloud-download';
 import Description from 'material-ui/svg-icons/action/description';
 import Equalizer from 'material-ui/svg-icons/av/equalizer';

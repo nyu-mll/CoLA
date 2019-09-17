@@ -1,5 +1,6 @@
 import React from 'react';
-import Form from './Form';
+import Description from 'material-ui/svg-icons/action/description';
+import Create from 'material-ui/svg-icons/content/create';
 
 const VerbFrames = () => {
   return (
@@ -49,11 +50,11 @@ const VerbFrames = () => {
         <div className="strong">Citation <a href="verb.txt"><Create className="icons" /></a></div>
         <pre className="citation-pre">
           <code>
-            @article{kann2018verb,
-              title={Verb argument structure alternations in word and sentence embeddings},
-              author={Kann, Katharina and Warstadt, Alex and Williams, Adina and Bowman, Samuel R},
-              journal={arXiv preprint arXiv:1811.10773},
-              year={2018}
+            @article{'{'}kann2018verb,<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;title={'{'}Verb argument structure alternations in word and sentence embeddings},<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;author={'{'}Kann, Katharina and Warstadt, Alex and Williams, Adina and Bowman, Samuel R},<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;journal={'{'}arXiv preprint arXiv:1811.10773},<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;year={'{'}2018}<br/>
             }
           </code>
         </pre>

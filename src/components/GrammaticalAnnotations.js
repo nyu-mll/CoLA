@@ -1,5 +1,6 @@
 import React from 'react';
-import Form from './Form';
+import Description from 'material-ui/svg-icons/action/description';
+import Create from 'material-ui/svg-icons/content/create';
 
 const GrammaticalAnnotations = () => {
   return (
@@ -43,11 +44,11 @@ const GrammaticalAnnotations = () => {
         <div className="strong">Citation <a href="grammatical_analysis.txt"><Create className="icons" /></a></div>
         <pre className="citation-pre">
           <code>
-            @article{warstadt2019grammatical,
-              title={Grammatical Analysis of Pretrained Sentence Encoders with Acceptability Judgments},
-              author={Warstadt, Alex and Bowman, Samuel R},
-              journal={arXiv preprint arXiv:1901.03438},
-              year={2019}
+            @article{'{'}warstadt2019grammatical,<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;title={'{'}Grammatical Analysis of Pretrained Sentence Encoders with Acceptability Judgments},<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;author={'{'}Warstadt, Alex and Bowman, Samuel R},<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;journal={'{'}arXiv preprint arXiv:1901.03438},<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;year={'{'}2019}<br/>
             }
           </code>
         </pre>
